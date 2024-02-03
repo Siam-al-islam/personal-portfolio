@@ -221,7 +221,7 @@ body {
 }
 
 .blog {
-    max-width: 25%;
+    width: 25%;
     flex-direction: column;
 }
 
@@ -276,23 +276,63 @@ body {
     font-size: 1.1em;
 }
 
-
-
-
+/* responsive for first section */
 
 @media screen and (max-width: 480px) {
-    .second-section {
-        padding: 0 10px 10px 10px;
-        background-color: aqua;
+    .first-sec {
         display: flex;
         flex-direction: column;
     }
 
-    .specialization {
+    .personal-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .heading-info {
+        font-size: 15px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .short-details {
+        font-size: 12px;
+    }
+
+    .featured-works {
+        width: 100%;
+    }
+
+    .featured {
+        width: 100%;
+    }
+
+    .more-work {
+        width: 100%;
+    }
+
+    .about-me,
+    .projects-sec {
+        width: 50%;
+    }
+}
+
+/* responsive for second section */
+
+@media screen and (max-width: 480px) {
+    .second-section {
+        padding: 0 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog {
         width: 85%;
     }
 
-    .specialization-icons {
-        display: inline;
+    .specialization {
+        width: 85%;
     }
 }
