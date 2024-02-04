@@ -9,7 +9,7 @@ body {
 }
 
 .nav-bar {
-    height: 80px;
+    height: 50px;
     background-color: #0F0F0F;
     display: flex;
     align-items: center;
@@ -17,11 +17,14 @@ body {
 }
 
 .nav-div {
+    top: 0;
+    padding: 5px;
     width: 65%;
-    height: 100%;
+    background-color: #0F0F0F;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
 }
 
 .logo {
@@ -43,8 +46,14 @@ body {
 .list-name {
     text-transform: uppercase;
     text-decoration: none;
-    color: rgb(219, 219, 219);
+    color: rgb(166, 166, 166);
+    transition: .3s;
 }
+
+.list-name:hover {
+    color: white;
+}
+
 
 .talk-btn {
     color: white;
@@ -59,12 +68,6 @@ body {
     color: #0F0F0F;
     background-color: white;
 }
-
-/*@media screen and (max-width: 600px) {
-    .page-list {
-        flex-direction: column;
-    }
-}*/
 
 /* parent */
 
@@ -263,6 +266,25 @@ body {
     background-color: white;
 }
 
+/* third section */
+
+.work-experience {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-experience-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.exp-title {
+    color: white;
+    font-size: 30px;
+}
+
 .title {
     text-transform: uppercase;
     font-weight: 700;
@@ -290,11 +312,11 @@ body {
 
 
     .page-list li {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .talk-btn {
-        font-size: 12px;
+        font-size: 10px;
         padding: 10px 15px;
     }
 }
@@ -318,7 +340,7 @@ body {
     }
 
     .name {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .short-details {
@@ -330,7 +352,7 @@ body {
     }
 
     .featured {
-        font-size: 14px;
+        font-size: 12px;
         width: 92%;
     }
 
