@@ -266,14 +266,14 @@ body {
 .title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .8em;
+    font-size: 12px;
     letter-spacing: 1px;
     color: rgb(143, 143, 143);
 }
 
 .sub-title {
     color: white;
-    font-size: 1.1em;
+    font-size: 15px;
 }
 
 
@@ -282,15 +282,20 @@ body {
 @media screen and (max-width: 480px) {
     .nav-div {
         width: 100%;
-        margin: 0px 10px;
     }
+
+    .logo img {
+        width: 100%;
+    }
+
 
     .page-list li {
         font-size: 12px;
     }
 
     .talk-btn {
-        padding: 10px 20px;
+        font-size: 12px;
+        padding: 10px 15px;
     }
 }
 
@@ -309,11 +314,11 @@ body {
     }
 
     .heading-info {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .name {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .short-details {
@@ -325,16 +330,30 @@ body {
     }
 
     .featured {
-        width: 90%;
+        font-size: 14px;
+        width: 92%;
     }
 
     .more-work {
         width: 100%;
+        gap: 10px;
     }
 
     .about-me,
     .projects-sec {
         width: 50%;
+    }
+
+    .second-section {
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 10px;
+    }
+
+    .sub-title {
+        font-size: 15px;
     }
 }
 
