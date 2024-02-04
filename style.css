@@ -282,16 +282,15 @@ body {
 @media screen and (max-width: 480px) {
     .nav-div {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        margin: 0px 10px;
     }
 
     .page-list li {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .talk-btn {
-        display: none;
+        padding: 10px 20px;
     }
 }
 
@@ -360,5 +359,18 @@ body {
 
     .profile {
         width: 100%;
+    }
+}
+
+
+/* for tablet */
+
+@media screen and (max-width: 768px) {
+    .nav-div {
+        font-size: 12px;
+    }
+
+    .page-list {
+        gap: 20px;
     }
 }
