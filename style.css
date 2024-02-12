@@ -291,6 +291,9 @@
             width: 100%;
         }
 
+        .page-list {
+            gap: 25px;
+        }
 
         .page-list li {
             font-size: 10px;
