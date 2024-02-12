@@ -23,6 +23,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 999;
     }
 
     .logo {
@@ -275,6 +276,13 @@
     .sub-title {
         color: white;
         font-size: 15px;
+    }
+
+    footer {
+        text-align: center;
+        color: white;
+        font-size: 12px;
+        padding: 40px;
     }
 
 
