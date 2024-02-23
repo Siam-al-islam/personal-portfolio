@@ -300,7 +300,7 @@
         }
 
         .page-list {
-            gap: 25px;
+            gap: 20px;
         }
 
         .page-list li {
@@ -310,6 +310,7 @@
         .talk-btn {
             font-size: 10px;
             padding: 10px 15px;
+            margin-right: 10px;
         }
     }
 
