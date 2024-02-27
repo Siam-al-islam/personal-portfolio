@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0F0F0F;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header,
+.nav,
+.main,
+.sidebar,
+.advertise,
+.footer {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    gap: 5px;
+    grid-template-areas:
+        "header header header header"
+        "main    main   main   main"
+        "main    main   main   main"
+        "footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width:576px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "sidebar"
+            "advertise"
+            "footer"
+        ;
+    }
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-div {
+    top: 0;
+    padding: 5px;
+    width: 65%;
+    background-color: #0F0F0F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    width: 10%;
+    min-width: 70px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.page-list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.list-name {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(166, 166, 166);
+    transition: .3s;
+}
+
+.list-name:hover {
+    color: white;
+}
+
+
+.talk-btn {
+    color: white;
+    background-image: linear-gradient(rgba(242, 242, 242, 0.195), #bfbfbf50);
+    padding: 10px 30px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.talk-btn:hover {
+    color: #0F0F0F;
+    background-color: white;
+}
+
+/* responsive for navigation bar*/
+
+@media screen and (max-width: 480px) {
+    .nav-div {
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .page-list {
+        gap: 25px;
+    }
+
+    .page-list li {
+        font-size: 10px;
+    }
+
+    .talk-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+}
+
+.main {
+    grid-area: main;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.advertise {
+    grid-area: advertise;
+}
+
+.footer {
+    grid-area: footer;
+}

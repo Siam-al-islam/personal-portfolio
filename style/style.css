@@ -288,7 +288,7 @@
 
     /* responsive for navigation bar*/
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 992px) {
         .nav-div {
             width: 100%;
             position: fixed;
@@ -304,7 +304,7 @@
         }
 
         .page-list li {
-            font-size: 10px;
+            font-size: 11px;
         }
 
         .talk-btn {
@@ -315,7 +315,7 @@
 
     /* responsive for first section */
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 992px) {
         .first-sec {
             margin-top: 50px;
             display: flex;
@@ -358,6 +358,8 @@
         .projects-sec {
             width: 50%;
         }
+
+        .container {}
 
         .second-section {
             gap: 15px;
