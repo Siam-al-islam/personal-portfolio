@@ -4,19 +4,11 @@
 }
 
 body {
+    color: white;
     background-color: #0F0F0F;
     font-family: 'Poppins', sans-serif;
 }
 
-.header,
-.nav,
-.main,
-.sidebar,
-.advertise,
-.footer {
-    border: 1px solid white;
-    border-radius: 5px;
-}
 
 .container {
     display: grid;
@@ -106,6 +98,85 @@ body {
     background-color: white;
 }
 
+/* main style  */
+.heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main {
+    grid-area: main;
+    max-width: 1046px;
+    margin: 100px auto 100px;
+}
+
+.item-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-bottom: 50px;
+}
+
+.item {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #232323cb;
+}
+
+.content {
+    padding: 15px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.item span {
+    color: rgb(143, 143, 143);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.live-btn {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(242, 242, 242, 0.195), #bfbfbf50);
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .4s;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.live-btn:hover {
+    color: #0F0F0F;
+    background-color: white;
+
+}
+
+
+
+
+
+.footer {
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    grid-area: footer;
+}
+
 /* responsive for navigation bar*/
 
 @media screen and (min-width: 576px) and (max-width:992px) {
@@ -145,6 +216,13 @@ body {
         width: 100%;
     }
 
+    .item-container {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+
     .page-list {
         gap: 25px;
     }
@@ -158,20 +236,4 @@ body {
         padding: 10px 15px;
         margin-right: 10px;
     }
-}
-
-.main {
-    grid-area: main;
-}
-
-.sidebar {
-    grid-area: sidebar;
-}
-
-.advertise {
-    grid-area: advertise;
-}
-
-.footer {
-    grid-area: footer;
 }
