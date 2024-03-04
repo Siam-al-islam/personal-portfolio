@@ -131,131 +131,131 @@ body {
     border-left: 1px solid rgb(59, 55, 55);
 }
 
+
 .item:hover img {
     transform: scale(1.1);
+}
 
+.item h3 {
+    font-size: 15px;
+}
 
-    .item h3 {
-        font-size: 15px;
-    }
+.content {
+    padding: 15px;
+}
 
-    .content {
-        padding: 15px;
-    }
+.item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    transition: .3s;
 
-    .item img {
+}
+
+.item span {
+    color: rgb(143, 143, 143);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.live-btn {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(rgba(242, 242, 242, 0.195), #bfbfbf50);
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: .4s;
+    margin-top: 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.live-btn:hover {
+    border: 1px solid white;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.footer {
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    grid-area: footer;
+    margin-bottom: 20px;
+}
+
+/* responsive for navigation bar*/
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .nav-div {
         width: 100%;
-        border-radius: 5px;
+        position: fixed;
+        top: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .page-list {
+        gap: 25px;
+    }
+
+    .page-list li {
+        font-size: 11px;
+    }
+
+    .talk-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-div {
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .heading {
+        margin-top: 15px;
+        font-size: 18px;
         margin-bottom: 16px;
-        transition: .3s;
-
     }
 
-    .item span {
-        color: rgb(143, 143, 143);
-        font-size: 12px;
-        font-weight: 700;
-        margin-bottom: 16px;
+    .item-container {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 50px;
     }
 
-    .item a {
-        color: white;
-        text-decoration: none;
+    .page-list {
+        gap: 20px;
     }
 
-    .live-btn {
-        color: rgb(0, 0, 0);
-        background-image: linear-gradient(rgba(242, 242, 242, 0.195), #bfbfbf50);
-        padding: 10px 18px;
-        border: 0;
-        border-radius: 15px;
-        text-decoration: none;
-        transition: .4s;
-        margin-top: 16px;
-        cursor: pointer;
-        font-size: 12px;
-        font-weight: 600;
+    .page-list li {
+        font-size: 11px;
     }
 
-    .live-btn:hover {
-        border: 1px solid white;
-        color: #ffffff;
-        background-color: rgb(0, 0, 0);
-
-    }
-
-    .footer {
-        border-radius: 5px;
-        font-size: 12px;
-        text-align: center;
-        grid-area: footer;
-        margin-bottom: 20px;
-    }
-
-    /* responsive for navigation bar*/
-
-    @media screen and (min-width: 576px) and (max-width:992px) {
-        .nav-div {
-            width: 100%;
-            position: fixed;
-            top: 0;
-        }
-
-        .logo img {
-            width: 100%;
-        }
-
-        .page-list {
-            gap: 25px;
-        }
-
-        .page-list li {
-            font-size: 11px;
-        }
-
-        .talk-btn {
-            font-size: 10px;
-            padding: 10px 15px;
-            margin-right: 10px;
-        }
-    }
-
-    @media screen and (max-width: 576px) {
-        .nav-div {
-            width: 100%;
-            position: fixed;
-            top: 0;
-        }
-
-        .logo img {
-            width: 100%;
-        }
-
-        .heading {
-            margin-top: 15px;
-            font-size: 18px;
-            margin-bottom: 16px;
-        }
-
-        .item-container {
-            gap: 10px;
-            grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
-            margin-bottom: 50px;
-        }
-
-        .page-list {
-            gap: 20px;
-        }
-
-        .page-list li {
-            font-size: 11px;
-        }
-
-        .talk-btn {
-            font-size: 10px;
-            padding: 10px 15px;
-            margin-right: 10px;
-        }
+    .talk-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-right: 10px;
     }
 }
