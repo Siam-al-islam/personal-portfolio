@@ -68,3 +68,89 @@ body {
     color: #0F0F0F;
     background-color: white;
 }
+
+/* main style  */
+
+.contact-info {
+    max-width: 1170px;
+    color: rgb(255, 175, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+.contact-info img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* responsive for navigation bar*/
+
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .nav-div {
+        width: 100%;
+        /* position: fixed; */
+        top: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .page-list {
+        gap: 25px;
+    }
+
+    .page-list li {
+        font-size: 11px;
+    }
+
+    .talk-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-div {
+        width: 100%;
+        /* position: fixed; */
+        top: 0;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .heading {
+        margin-top: 15px;
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+
+    .item-container {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+
+    .page-list {
+        gap: 20px;
+    }
+
+    .page-list li {
+        font-size: 11px;
+    }
+
+    .talk-btn {
+        font-size: 10px;
+        padding: 10px 15px;
+        margin-right: 10px;
+    }
+}
