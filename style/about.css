@@ -70,6 +70,19 @@ body {
     background-color: white;
 }
 
+main {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main h1 {
+    color: white;
+}
+
+main p {
+    color: rgba(255, 255, 255, 0.597);
+}
+
 @media screen and (min-width: 576px) and (max-width:992px) {
     .nav-div {
         width: 100%;
