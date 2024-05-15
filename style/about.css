@@ -73,10 +73,12 @@ body {
 main {
     max-width: 1170px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 main h1 {
     color: white;
+    text-align: center;
 }
 
 main p {
